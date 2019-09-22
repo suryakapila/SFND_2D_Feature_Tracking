@@ -14,7 +14,7 @@ void matchDescriptors(std::vector<cv::KeyPoint> &kPtsSource, std::vector<cv::Key
     if (matcherType.compare("MAT_BF") == 0)
     {
        int normType =  cv::NORM_L2;
-       if(descriptorType.compare("DES_BINARY"))
+       if(descriptorType.compare("DES_BINARY")==0)
        {
          normType = cv::NORM_HAMMING;
        }
@@ -221,7 +221,8 @@ void descKeypoints(vector<cv::KeyPoint> &keypoints, cv::Mat &img, cv::Mat &descr
     }
     else if (descriptorType.compare("SIFT")==0)
     {
-      extractor = cv::xfeatures2d::SiftDescriptorExtractor::create(); 
+      extractor = cv::xfeatures2d::SiftDescriptorExtractor::create();
+    
     }
     // perform feature description
     double t = (double)cv::getTickCount();

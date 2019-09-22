@@ -65,7 +65,7 @@ int main(int argc, const char *argv[])
       if(dt.compare("AKAZE")!=0 && ds.compare("AKAZE")==0)
         continue;
       if(dt.compare("AKAZE")==0 && ds.compare("AKAZE")==0)
-         continue;
+        continue;
        dataBuffer.clear();
        cout << "detector type : "<< dt <<"descriptor type :" << ds << endl;
        //start TASK MP.7 implementation
@@ -165,7 +165,7 @@ int main(int argc, const char *argv[])
 
                 cv::KeyPoint keypoint_xy;
                 keypoint_xy.pt = cv::Point2f(it->pt);
-
+				keypoint_xy.size = 1;
                 kptsROI.push_back(keypoint_xy);
                }
               }
@@ -186,7 +186,7 @@ int main(int argc, const char *argv[])
             {
                 int maxKeypoints = 50;
 
-                if (detectorType.compare("SHITOMASI") == 0)
+                if (detectorType.compare(ds) == 0)
                 { // there is no response info, so keep the first 50 as they are sorted in descending quality order
                     keypoints.erase(keypoints.begin() + maxKeypoints, keypoints.end());
                 }
@@ -221,8 +221,8 @@ int main(int argc, const char *argv[])
 
                 vector<cv::DMatch> matches;
                 string matcherType = "MAT_BF";     // MAT_BF, MAT_FLANN
-                string descriptorType = "DES_HOG";               // DES_BINARY, DES_HOG
-                if(descriptor_Type.compare("SIFT")!=0)
+                string descriptorType = "DES_HOG"; // DES_BINARY, DES_HOG
+                if(descriptor_Type!="SIFT")
                 {
                  descriptorType = "DES_BINARY"; 
                 }
