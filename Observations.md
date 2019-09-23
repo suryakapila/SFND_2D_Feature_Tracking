@@ -401,13 +401,14 @@ void descKeypoints(vector<cv::KeyPoint> &keypoints, cv::Mat &img, cv::Mat &descr
 
 RANK | Detector+Descriptor | Time taken | Avg keypoints
 -----|---------------------|------------|----------------
-  1  |  FAST+BRIEF         | 5.69 ms    | 119
+  1  |  FAST+BRIEF         | 5.69 ms    | 122
   2  |  FAST+ORB           | 5.73 ms    | 118
   3  |  ORB+BRIEF          | 7.91 ms    | 66
   
  * Based on the average number of keypoints and time taken for the implementation of Detector+Descriptor combination, these are the three top performers chosen as the best choice for our purpose of detecting keypoints on vehicles.
 
 
+*Special mention to `https://github.com/studian/SFND_P3_2D_Feature_Tracking`whose `writeup.md` is the inspiration for this file*
  
  
 
