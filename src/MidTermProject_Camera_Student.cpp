@@ -227,12 +227,12 @@ int main(int argc, const char *argv[])
                  descriptorType = "DES_BINARY"; 
                 }
                 
-                
+                //// TASK MP.6 -> add KNN match selection and perform descriptor distance ratio filtering  with t=0.8 in file matching2D.cpp(done)
                 string selectorType = "SEL_KNN";       // SEL_NN, SEL_KNN
 
                 //// STUDENT ASSIGNMENT
                 //// TASK MP.5 -> add FLANN matching in file matching2D.cpp (done)
-                //// TASK MP.6 -> add KNN match selection and perform descriptor distance ratio filtering  with t=0.8 in file matching2D.cpp(done)
+                
 
                 matchDescriptors((dataBuffer.end() - 2)->keypoints, (dataBuffer.end() - 1)->keypoints,
                                  (dataBuffer.end() - 2)->descriptors, (dataBuffer.end() - 1)->descriptors,
