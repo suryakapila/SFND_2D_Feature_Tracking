@@ -408,7 +408,7 @@ RANK | Detector+Descriptor | Time taken | Avg keypoints
  * Based on the average number of keypoints and time taken for the implementation of Detector+Descriptor combination, these are the three top performers chosen as the best choice for our purpose of detecting keypoints on vehicles.
 
 
-*Special mention to .[Studian].(https://github.com/studian/SFND_P3_2D_Feature_Tracking) whose `writeup.md` is the inspiration for this file*
+*Special mention to [Studian](https://github.com/studian/SFND_P3_2D_Feature_Tracking) whose `writeup.md` is the inspiration for this file*
  
  
 
