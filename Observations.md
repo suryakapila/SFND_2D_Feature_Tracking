@@ -147,10 +147,10 @@ void detKeypointsModern(std::vector<cv::KeyPoint> &keypoints, cv::Mat &img, std:
   //implementation of FAST detector algorithm
    if(detectorType.compare("FAST")==0)
    {
-     int threshold = 30; //difference between the intensity of the centre pixel and the sorrouding pixels
-     bool bNMS = true; //perform Non-Maxima Suppression on keypoints
+     //int threshold = 30; //difference between the intensity of the centre pixel and the sorrouding pixels
+     //bool bNMS = true; //perform Non-Maxima Suppression on keypoints
      
-     detector = cv::FastFeatureDetector::create(threshold, bNMS, cv::FastFeatureDetector::TYPE_9_16);
+     detector = cv::FastFeatureDetector::create();
      
    }
   //implementation of BRISK detector
