@@ -369,7 +369,7 @@ void descKeypoints(vector<cv::KeyPoint> &keypoints, cv::Mat &img, cv::Mat &descr
  ## MP.7 Performance Evaluation 1
  * Count the number of keypoints on the preceding vehicle for all 10 images and take note of the distribution of their neighborhood size.
  * Do this for all the detectors you have implemented.
- * Solution is stored in the .csv files in this project `MP7_Count_Keypoints.csv`file .[CSV file].(https://github.com/suryakapila/SFND_2D_Feature_Tracking/blob/master/MP7_Count_Keypoints.csv).
+ * Solution is stored in the .csv files in this project `MP7_Count_Keypoints.csv`file [CSV file](https://github.com/suryakapila/SFND_2D_Feature_Tracking/blob/master/MP7_Count_Keypoints.csv).
  * The distribution of neighbourhood of keypoints of various Kepoint detectors is as follows:
  
  Detector  | Neighbour of keypoints
@@ -390,7 +390,7 @@ void descKeypoints(vector<cv::KeyPoint> &keypoints, cv::Mat &img, cv::Mat &descr
 
 * Count the number of matched keypoints for all 10 images using all possible combinations of detectors and descriptors. 
 * In the matching step, the BF approach is used with the descriptor distance ratio set to 0.8.
-* The number of matched keypoints can be seen in the file `MP8_CountMatches.csv`.[CSVfile].(https://github.com/suryakapila/SFND_2D_Feature_Tracking/blob/master/MP8_CountMatches.csv)
+* The number of matched keypoints can be seen in the file `MP8_CountMatches.csv` [CSVfile](https://github.com/suryakapila/SFND_2D_Feature_Tracking/blob/master/MP8_CountMatches.csv)
 
 ### 9.Top3 Detector/Descriptor Matching
 
