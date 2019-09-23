@@ -399,7 +399,13 @@ void descKeypoints(vector<cv::KeyPoint> &keypoints, cv::Mat &img, cv::Mat &descr
 * Log the time it takes for keypoint detection and descriptor extraction. 
 * The results must be entered into a spreadsheet and based on this data, the TOP3 detector / descriptor combinations must be recommended as the best choice for our purpose of detecting keypoints on vehicles.
 
-
+RANK | Detector+Descriptor | Time taken | Avg keypoints
+-----|---------------------|------------|----------------
+  1  |  FAST+BRIEF         | 5.69 ms    | 119
+  2  |  FAST+ORB           | 5.73 ms    | 118
+  3  |  ORB+BRIEF          | 7.91 ms    | 66
+  
+ * Based on the average number of keypoints and time taken for the implementation of Detector+Descriptor combination, these are the three top performers chosen as the best choice for our purpose of detecting keypoints on vehicles.
 
 
  
